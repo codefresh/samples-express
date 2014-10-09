@@ -56,5 +56,8 @@ app.use(function(err, req, res, next) {
     });
 });
 
-app.listen(process.env.PORT || 7777);
+app.listen(process.env.PORT || 7777, function()
+{
+    console.log("server is up");
+});
 module.exports = app;
